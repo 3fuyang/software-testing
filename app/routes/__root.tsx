@@ -61,7 +61,6 @@ export const Route = createRootRoute({
           },
       isProd
         ? {
-            type: 'text/partytown',
             src: 'https://www.googletagmanager.com/gtag/js?id=G-PD9F771L0T',
             async: true,
           }

@@ -1,13 +1,9 @@
-import path from 'node:path'
-import { partytownVite } from '@builder.io/partytown/utils'
 import { defineConfig } from '@tanstack/start/config'
 import tsConfigPaths from 'vite-tsconfig-paths'
 
 const ReactCompilerConfig = {
   target: '19', // '17' | '18' | '19'
 }
-
-const isProd = process.env.NODE_ENV === 'production'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,15 +22,6 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      isProd
-        ? partytownVite({
-            dest: path.join(
-              import.meta.dirname,
-              '.output/public',
-              '~partytown',
-            ),
-          })
-        : undefined,
       tsConfigPaths({
         projects: ['./tsconfig.json'],
       }),

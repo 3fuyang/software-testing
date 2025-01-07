@@ -11,7 +11,7 @@ For direct showcases, see [website](https://v2.libretesting.xyz).
 - UI: [Shadcn/UI](https://ui.shadcn.com) + [Tailwind CSS](https://tailwindcss.com)
 - Hosting: [Vercel](https://vercel.com)(Origin Server) + [Cloudflare](https://www.cloudflare.com)(Reverse Proxy)
 - Analytics: [Google Analytics](https://analytics.google.com)
-- Misc: [React Compiler](https://react.dev/learn/react-compiler), [Canvas Confetti](https://github.com/catdad/canvas-confetti), [Partytown](https://partytown.builder.io)
+- Misc: [React Compiler](https://react.dev/learn/react-compiler), [Canvas Confetti](https://github.com/catdad/canvas-confetti)
 
 ## TODOs
 
