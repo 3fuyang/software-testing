@@ -94,7 +94,11 @@ function GitHubLink() {
 
 function ThemeSwitch() {
   const { isDarkMode, ternaryDarkMode, setTernaryDarkMode } =
-    useTernaryDarkMode()
+    useTernaryDarkMode({
+      // For SSR usage
+      // @see https://github.com/juliencrn/usehooks-ts/issues/644
+      initializeWithValue: false,
+    })
 
   return (
     <DropdownMenu>
