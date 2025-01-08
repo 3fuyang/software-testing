@@ -27,7 +27,7 @@ export const Route = createRootRoute({
         lang: 'zh-CN',
       },
       {
-        charSet: 'utf-8',
+        charSet: 'utf8',
       },
       {
         name: 'description',

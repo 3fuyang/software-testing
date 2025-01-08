@@ -16,5 +16,5 @@ export function ThemeProvider(props: PropsWithChildren) {
     }
   }, [isDarkMode])
 
-  return <>{props.children}</>
+  return props.children
 }

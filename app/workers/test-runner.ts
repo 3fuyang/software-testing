@@ -11,7 +11,7 @@ const implementationMap = {
   'telecom-system': telecomSystemImplementations,
 } as const
 
-onmessage = (e) => {
+globalThis.addEventListener('message', (e) => {
   const { problem, version, cases } = e.data as {
     problem: keyof typeof implementationMap
     version: string
@@ -23,7 +23,7 @@ onmessage = (e) => {
   ] as (...args: unknown[]) => string
   const result = runTest(implementation, cases)
   postMessage(result)
-}
+})
 
 function runTest(
   implementation: (...args: unknown[]) => string,
